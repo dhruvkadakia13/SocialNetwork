@@ -54,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
                 UserMenuSelector(menuItem);
                 return false;
             }
+
+
         });
     }
 
@@ -90,29 +92,6 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "profile",Toast.LENGTH_SHORT).show();
                 break;
 
-            case R.id.nav_home:
-                Toast.makeText(this, "home",Toast.LENGTH_SHORT).show();
-                break;
-
-            case R.id.nav_friends:
-                Toast.makeText(this, "friend list",Toast.LENGTH_SHORT).show();
-                break;
-
-            case R.id.nav_find_friends:
-                Toast.makeText(this, "find friends",Toast.LENGTH_SHORT).show();
-                break;
-
-            case R.id.nav_messages:
-                Toast.makeText(this, "messages",Toast.LENGTH_SHORT).show();
-                break;
-
-            case R.id.nav_settings:
-                Toast.makeText(this, "settings",Toast.LENGTH_SHORT).show();
-                break;
-
-            case R.id.nav_logout:
-                Toast.makeText(this, "logout",Toast.LENGTH_SHORT).show();
-                break;
         }
     }
 }

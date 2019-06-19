@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register"
+    tools:context=".SetupActivity">
+
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/register"
@@ -48,15 +54,15 @@
         android:textSize="20sp"/>
 
     <EditText
-        android:id="@+id/setup_country_name"
+        android:id="@+id/setup_address"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
         android:layout_below="@id/setup_full_name"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="7dp"
         android:layout_marginRight="7dp"
         android:ems="10"
-        android:hint="Country Name"
+        android:hint="Address"
         android:inputType="textMultiLine"
         android:background="@drawable/inputs"
         android:padding="25dp"
@@ -67,7 +73,7 @@
         android:id="@+id/setup_button"
         android:layout_width="175dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/setup_country_name"
+        android:layout_below="@id/setup_address"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="35dp"
         android:background="@drawable/button"
@@ -78,3 +84,4 @@
 
 
 </RelativeLayout>
+</ScrollView>
